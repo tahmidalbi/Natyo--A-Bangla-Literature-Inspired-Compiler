@@ -1,0 +1,63 @@
+prostabona
+
+$$ =========================
+$$ semantic error section
+$$ =========================
+
+shonkhya a = 5;
+shonkhya a = 10;              $$ redeclaration
+
+bakkyo msg = "Hello";
+okkhyor c = 'A';
+
+x = 20;                       $$ undeclared assignment
+
+PAI = 9;                      $$ constant modification
+
+shonkhya k = msg + 2;         $$ invalid arithmetic
+
+jodi (msg > 2)
+shuru
+    shobdo msg;
+shesh
+
+purnoshonkhya p = 5.5;
+purnoshonkhya q = 2.0;
+shobdo p % q;                 $$ modulo requires integer operands
+
+pherot 5;                     $$ return outside function
+
+drissho bad(x)
+shuru
+    pherot "hello";
+    pherot 5;                 $$ inconsistent return type
+shesh
+
+drissho jog(x, y)
+shuru
+    pherot x + y;
+shesh
+
+shobdo jog(5);                $$ wrong number of arguments
+shobdo jog(msg, 5);           $$ wrong argument type
+
+$$ =========================
+$$ syntax error section
+$$ put this near the end,
+$$ because parser may stop here
+$$ =========================
+
+jodi (a > 2
+shuru
+    shobdo a;
+shesh
+
+$$ =========================
+$$ lexical error section
+$$ put this at the very end,
+$$ because lexer/parser may break here
+$$ =========================
+
+@
+
+uposhonghar

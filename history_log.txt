@@ -4,10 +4,7 @@ Scene 3: Variable 'msg' updated to "Hello"
 Scene 4: Variable 'c' updated to 'A'
 Scene 5: Variable 'a' updated to 10.000000
 Scene 6: Variable 'b' updated to 13.500000
-Scene 7: Variable 'b' updated to 100.000000
-Scene 8: Variable 'b' updated to 5.000000
-Scene 9: Variable 'temp' updated to 1.000000
-Scene 10: Variable 'a' updated to 0.000000
-Scene 11: Variable 'a' updated to 1.000000
-Scene 12: Variable 'a' updated to 2.000000
-Scene 13: Variable 'a' updated to 3.000000
+Scene 7: Variable 'a' updated to 0.000000
+Scene 8: Variable 'a' updated to 1.000000
+Scene 9: Variable 'a' updated to 2.000000
+Scene 10: Variable 'a' updated to 3.000000

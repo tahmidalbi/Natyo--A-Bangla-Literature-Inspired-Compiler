@@ -1,0 +1,24 @@
+prostabona
+
+shonkhya a = 10;
+shonkhya b = 3;
+
+jodi (a > b)
+shuru
+    shobdo a;
+shesh
+onnotha
+shuru
+    shobdo b;
+shesh
+
+jodi (b > a)
+shuru
+    shobdo b;
+shesh
+onnotha
+shuru
+    shobdo a;
+shesh
+
+uposhonghar

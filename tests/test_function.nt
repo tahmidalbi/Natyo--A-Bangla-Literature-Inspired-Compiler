@@ -1,0 +1,19 @@
+prostabona
+
+drissho jog(x, y)
+shuru
+    pherot x + y;
+shesh
+
+drissho gun(x, y)
+shuru
+    pherot x * y;
+shesh
+
+shonkhya a = 5;
+shonkhya b = 7;
+
+shobdo jog(a, b);
+shobdo gun(a, b);
+
+uposhonghar

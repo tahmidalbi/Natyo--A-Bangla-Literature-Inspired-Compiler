@@ -1,0 +1,16 @@
+prostabona
+
+shonkhya a = 2;
+shonkhya b = 3;
+purnoshonkhya c = 4.5;
+
+shobdo a + b * 2;
+shobdo (a + b) * 2;
+shobdo c + a;
+shobdo shakti(2, 3);
+shobdo borgomul(25);
+shobdo PAI;
+shobdo E;
+shobdo G;
+
+uposhonghar

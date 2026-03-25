@@ -1,0 +1,16 @@
+prostabona
+
+shonkhya a = 5;
+purnoshonkhya b = 2.5;
+bakkyo msg = "Natyo";
+okkhyor c = 'Z';
+
+a = 12;
+b = b + 3.5;
+
+shobdo a;
+shobdo b;
+shobdo msg;
+shobdo c;
+
+uposhonghar

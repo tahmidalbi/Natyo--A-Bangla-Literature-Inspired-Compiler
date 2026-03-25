@@ -1,0 +1,40 @@
+prostabona
+
+drissho jog(x, y)
+shuru
+    pherot x + y;
+shesh
+
+shonkhya a = 5;
+purnoshonkhya b = 3.5;
+bakkyo msg = "Hello";
+okkhyor c = 'A';
+
+a = 10;
+b = a + b;
+
+shobdo a;
+shobdo b;
+shobdo msg;
+shobdo c;
+
+jodi (a < 20)
+shuru
+    shobdo 1;
+shesh
+onnotha
+shuru
+    shobdo 0;
+shesh
+
+chokro (a = 0; a < 3; a = a + 1)
+shuru
+    shobdo a;
+shesh
+
+shobdo jog(4, 6);
+shobdo shakti(3, 2);
+shobdo borgomul(16);
+shobdo PAI;
+
+uposhonghar
