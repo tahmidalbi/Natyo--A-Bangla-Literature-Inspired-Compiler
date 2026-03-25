@@ -2,39 +2,51 @@ Project Name: Natyo
 Type: A narrative-driven Bangla-inspired mini programming language
 
 Purpose:
-Natyo is a small custom language for a compiler project. It is inspired by Bangla words and story/narrative structure. The goal is to make programming feel like directing a drama or story.
+Natyo is a custom compiler language inspired by Bangla words and dramatic/narrative structure.
+It is designed for compiler laboratory work with creative syntax and technical features.
 
-Core Idea:
-A Natyo program starts like a story opening and ends like a story ending.
+Core Narrative Structure:
+- prostabona = program start
+- uposhonghar = program end
+- drissho = function definition / scene
 
-Main Structure:
-- prostabona = beginning of the program
-- uposhonghar = end of the program
-- drissho = code block / scene
-- shonkhya = integer data type
-- purnoshonkhya = float data type
-- shobdo = print output
+Core Data Types:
+- shonkhya = integer
+- purnoshonkhya = float
+- bakkyo = string
+- okkhyor = char
+
+Input / Output:
+- shobdo = print
 - jobdo = input
+
+Control Flow:
 - jodi = if
 - onnotha = else
 - chokro = loop
 
-Special Features:
-1. Narrative structure instead of traditional C-style syntax
-2. Runtime history log in history_log.txt
-3. Preloaded scientific constants:
-   - PAI = 3.1416
-   - E = 2.718
-   - G = 9.8
-4. Intrinsic math functions:
-   - shakti(base, power)
-   - borgomul(number)
+Math Functions:
+- shakti(base, power)
+- borgomul(number)
 
-What the language should support:
-- variable declaration
-- assignment
-- arithmetic expressions
-- printing
-- conditionals
-- loops
-- simple math functions
+Function Return:
+- pherot = return
+
+Preloaded Constants:
+- PAI = 3.1416
+- E = 2.718
+- G = 9.8
+
+Comments:
+- Single-line comments start with $$ and continue to end of line
+- Multi-line comments start with $* and end with *$
+
+Special Feature:
+- Runtime history log will later store variable changes in history_log.txt
+
+Compiler Phases:
+1. Lexical analysis using Flex
+2. Syntax analysis using Bison
+3. Semantic analysis using symbol table and type checks
+4. Execution / interpretation
+5. Runtime history logging

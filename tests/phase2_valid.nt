@@ -22,4 +22,29 @@ shobdo E;
 shobdo G;
 
 uposhonghar
-drissho
+drissho$$ single-line comment
+
+prostabona
+
+shonkhya a = 5;
+purnoshonkhya b = 3.14;
+bakkyo msg = "Hello Natyo";
+okkhyor c = 'A';
+
+drissho jog(x, y)
+    pherot x + y;
+
+shobdo a;
+shobdo b;
+shobdo msg;
+shobdo c;
+
+shobdo shakti(2, 3);
+shobdo borgomul(25);
+
+$*
+This is
+a multi-line comment
+*$
+
+uposhonghar

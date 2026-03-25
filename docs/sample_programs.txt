@@ -1,47 +1,43 @@
-Sample Program 1: Basic
+Sample 1: Basic Types
 
 prostabona
-    drissho main {
-        shonkhya a = 5;
+    shonkhya a = 5;
+    purnoshonkhya b = 3.14;
+    bakkyo msg = "hello";
+    okkhyor c = 'A';
+    shobdo a;
+    shobdo msg;
+    shobdo c;
+uposhonghar
+
+
+Sample 2: Function with Return
+
+prostabona
+    drissho jog(a, b)
+        pherot a + b;
+
+    shonkhya x = 5;
+    shonkhya y = 10;
+    shobdo jog(x, y);
+uposhonghar
+
+
+Sample 3: If Else
+
+prostabona
+    shonkhya a = 10;
+    jodi (a > 5)
         shobdo a;
-    }
+    onnotha
+        shobdo 0;
 uposhonghar
 
 
-Sample Program 2: If Else
+Sample 4: Loop
 
 prostabona
-    drissho main {
-        shonkhya a = 10;
-
-        jodi (a > 5) {
-            shobdo a;
-        }
-        onnotha {
-            shobdo 0;
-        }
-    }
-uposhonghar
-
-
-Sample Program 3: Loop
-
-prostabona
-    drissho main {
-        shonkhya i = 0;
-
-        chokro (i = 0; i < 3; i = i + 1) {
-            shobdo i;
-        }
-    }
-uposhonghar
-
-
-Sample Program 4: Math
-
-prostabona
-    drissho main {
-        shobdo shakti(2, 3);
-        shobdo borgomul(25);
-    }
+    shonkhya i = 0;
+    chokro (i = 0; i < 3; i = i + 1)
+        shobdo i;
 uposhonghar

@@ -7,6 +7,8 @@ enum TokenType {
     TOK_DRISSHO,
     TOK_SHONKHYA,
     TOK_PURNOSHONKHYA,
+    TOK_BAKKYO,
+    TOK_OKKHYOR,
     TOK_SHOBDO,
     TOK_JOBDO,
     TOK_JODI,
@@ -14,10 +16,13 @@ enum TokenType {
     TOK_CHOKRO,
     TOK_SHAKTI,
     TOK_BORGOMUL,
+    TOK_PHEROT,
 
     TOK_IDENTIFIER,
     TOK_INT_LITERAL,
     TOK_FLOAT_LITERAL,
+    TOK_STRING_LITERAL,
+    TOK_CHAR_LITERAL,
 
     TOK_ASSIGN,
     TOK_PLUS,
@@ -25,6 +30,9 @@ enum TokenType {
     TOK_MULT,
     TOK_DIV,
     TOK_MOD,
+
+    TOK_SHURU,
+    TOK_SHESH,
 
     TOK_GT,
     TOK_LT,
@@ -36,9 +44,7 @@ enum TokenType {
     TOK_SEMICOLON,
     TOK_COMMA,
     TOK_LPAREN,
-    TOK_RPAREN,
-    TOK_LBRACE,
-    TOK_RBRACE
+    TOK_RPAREN
 };
 
 #endif

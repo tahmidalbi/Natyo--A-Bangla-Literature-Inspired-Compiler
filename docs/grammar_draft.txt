@@ -1,45 +1,75 @@
-Natyo Grammar Draft (FINAL)
+Natyo Grammar Draft
 
 program
-    -> prostabona drissho_block uposhonghar
+    -> prostabona global_items uposhonghar
 
-drissho_block
-    -> drissho IDENTIFIER { statements }
+global_items
+    -> global_item
+    -> global_items global_item
 
-statements
-    -> statements statement
+global_item
     -> statement
+    -> function_definition
 
 statement
-    -> declaration
-    -> assignment
-    -> print_statement
+    -> declaration ;
+    -> assignment ;
+    -> print_statement ;
+    -> input_statement ;
+    -> return_statement ;
+    -> function_call ;
     -> if_statement
     -> loop_statement
 
 declaration
-    -> shonkhya IDENTIFIER = expression ;
-    -> purnoshonkhya IDENTIFIER = expression ;
+    -> shonkhya IDENTIFIER
+    -> shonkhya IDENTIFIER = expression
+    -> purnoshonkhya IDENTIFIER
+    -> purnoshonkhya IDENTIFIER = expression
+    -> bakkyo IDENTIFIER
+    -> bakkyo IDENTIFIER = STRING_LITERAL
+    -> okkhyor IDENTIFIER
+    -> okkhyor IDENTIFIER = CHAR_LITERAL
 
 assignment
-    -> IDENTIFIER = expression ;
+    -> IDENTIFIER = expression
+    -> IDENTIFIER = STRING_LITERAL
+    -> IDENTIFIER = CHAR_LITERAL
 
 print_statement
-    -> shobdo expression ;
+    -> shobdo expression
+    -> shobdo STRING_LITERAL
+    -> shobdo CHAR_LITERAL
+
+input_statement
+    -> jobdo IDENTIFIER
+
+return_statement
+    -> pherot expression
+    -> pherot STRING_LITERAL
+    -> pherot CHAR_LITERAL
 
 if_statement
-    -> jodi ( condition ) { statements }
-    -> jodi ( condition ) { statements } onnotha { statements }
+    -> jodi ( condition ) statement
+    -> jodi ( condition ) statement onnotha statement
 
 loop_statement
-    -> chokro ( assignment ; condition ; assignment ) { statements }
+    -> chokro ( assignment ; condition ; assignment ) statement
+
+function_definition
+    -> drissho IDENTIFIER ( parameter_list_opt ) statement
+
+function_call
+    -> IDENTIFIER ( argument_list_opt )
 
 expression
     -> expression + expression
     -> expression - expression
     -> expression * expression
     -> expression / expression
+    -> expression % expression
     -> NUMBER
     -> IDENTIFIER
+    -> ( expression )
     -> shakti ( expression , expression )
     -> borgomul ( expression )

@@ -21,10 +21,7 @@ int main(int argc, char *argv[]) {
     printf("Starting lexical analysis...\n\n");
 
     while ((token = yylex()) != 0) {
-        /* 
-           We do not need to print anything here because
-           print_token() inside lexer.l already prints each token.
-        */
+        /* token printing already happens inside lexer.l */
     }
 
     printf("\nLexical analysis finished.\n");

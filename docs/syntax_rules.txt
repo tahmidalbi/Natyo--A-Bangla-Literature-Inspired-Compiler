@@ -1,82 +1,70 @@
-Natyo Syntax Rules (FINAL)
+Natyo Syntax Rules
 
 1. Program Structure
-
-A program must start with:
+A program starts with:
     prostabona
 
-A program must end with:
+A program ends with:
     uposhonghar
 
-Inside the program, all code must be written inside a drissho block.
-
-Example:
-prostabona
-    drissho main {
-        statements...
-    }
-uposhonghar
-
-
-2. drissho (Scene / Block)
-
-drissho is used to define a block of code.
-
-Syntax:
-    drissho name {
-        statements
-    }
-
-Example:
-    drissho main {
-        shonkhya a = 5;
-        shobdo a;
-    }
-
-
-3. Variable Declaration
-
+2. Variable Declaration
 Integer:
     shonkhya a = 5;
 
 Float:
-    purnoshonkhya b = 3.2;
+    purnoshonkhya b = 3.14;
 
+String:
+    bakkyo msg = "hello";
 
-4. Assignment
+Char:
+    okkhyor c = 'A';
 
+3. Assignment
+Examples:
     a = 10;
+    msg = "Natyo";
+    c = 'B';
 
-
-5. Print Statement
-
+4. Print
+Use shobdo:
     shobdo a;
-    shobdo a + 2;
+    shobdo msg;
+    shobdo shakti(2, 3);
 
+5. Input
+Use jobdo:
+    jobdo a;
 
 6. Conditional
-
-    jodi (a > 2) {
+Use jodi and onnotha:
+    jodi (a > 5)
         shobdo a;
-    }
-    onnotha {
+    onnotha
         shobdo 0;
-    }
-
 
 7. Loop
-
-    chokro (i = 0; i < 5; i = i + 1) {
+Use chokro:
+    chokro (i = 0; i < 5; i = i + 1)
         shobdo i;
-    }
 
+8. Function Definition
+Use drissho:
+    drissho jog(a, b)
+        pherot a + b;
 
-8. Math Functions
+9. Function Return
+Use pherot:
+    pherot expression;
 
-    shakti(2, 3)
-    borgomul(16)
+10. Comments
+Single-line:
+    $$ this is a comment
 
+Multi-line:
+    $*
+    this is a multi-line comment
+    *$
 
-9. Important Rule
-
-Every executable statement must be inside a drissho block.
+11. Statement End
+Most simple statements end with semicolon.

@@ -1,0 +1,37 @@
+$$ Valid Natyo program
+
+prostabona
+
+shonkhya a = 5;
+purnoshonkhya b = 3.14;
+bakkyo msg = "Hello Natyo";
+okkhyor c = 'A';
+
+drissho jog(x, y)
+shuru
+    shonkhya z = x + y;
+    shobdo z;
+    pherot z;
+shesh
+
+shobdo jog(a, 10);
+shobdo shakti(2, 3);
+shobdo borgomul(25);
+shobdo msg;
+shobdo c;
+
+jodi (a > 2)
+shuru
+    shobdo a;
+shesh
+onnotha
+shuru
+    shobdo b;
+shesh
+
+chokro (a = 0; a < 3; a = a + 1)
+shuru
+    shobdo a;
+shesh
+
+uposhonghar
